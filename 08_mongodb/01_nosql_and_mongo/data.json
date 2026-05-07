@@ -1,0 +1,11 @@
+{
+  "users": [
+    { "name": "Khaled", "age": "28", "grade": 6 },
+    { "name": "Grace", "age": "20", "grade": 6 },
+    { "name": "Ahmad", "age": "28", "grade": 6, "country": "Egypt" },
+    {
+      "name": "Sarah",
+      "children": { "name": "Mike", "age": "28", "grade": 6 }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+- Create a new project folder
+- open your vscode in the project dir
+- use the terminal for the following commands:
+    - npm init
+    - npm i dotenv -D
+    - npm i  mongodb
+
+- Create index.js
+- Create .gitignore file with (node_modules) and (.env)
+- copy the code from our repository into index.js
+- create .env file with URI=
+- got to atlas, get your connection string from cluster => connect => drivers (choose node.js)
+- copy the connection string and place it in .env file as URI=<your connection string>
+- PLEASE REPLACE THE <PASSWORD PLACEHOLDER> WITH YOUR OWN PASSWORD
+- Run the project by terminal command: node ./index.js
+- On your atlas => cluster => browse collections => cluste => your db and the changes should be here...
