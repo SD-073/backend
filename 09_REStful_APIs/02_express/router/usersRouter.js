@@ -1438,8 +1438,11 @@ const todos = [
   }
 ]
 // user routes:
-
+// localhost:3000/users
 usersRouter.get('/', (req, res) => res.send(users));
+
+
+// localhost:3000/users/8
 
 usersRouter.get('/:id', (req, res) => {
    
