@@ -1,0 +1,48 @@
+{
+  "name": "middlewares",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/app.js",
+  "type": "module",
+  "imports": {
+    "#db": {
+      "development": "./src/db/index.ts",
+      "default": "./dist/db/index.js"
+    },
+    "#models": {
+      "development": "./src/models/index.ts",
+      "default": "./dist/models/index.js"
+    },
+    "#routes": {
+      "development": "./src/routes/index.ts",
+      "default": "./dist/routes/index.js"
+    },
+    "#controllers": {
+      "development": "./src/controllers/index.ts",
+      "default": "./dist/controllers/index.js"
+    },
+     "#middleware": {
+      "development": "./src/middleware/index.ts",
+      "default": "./dist/middleware/index.js"
+    }
+  },
+  "scripts": {
+    "dev": "node --watch --conditions development src/app.ts",
+    "prebuild": "rm -rf dist",
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "node dist/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^24.10.12",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.6.1"
+  }
+}
